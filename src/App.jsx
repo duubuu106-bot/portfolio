@@ -109,12 +109,11 @@ function App() {
         </section>
         <div className="section-divider page-width"><span>SCROLL TO EXPLORE</span><span aria-hidden="true">↓</span></div>
         <section className="about-section page-width" id="about" aria-labelledby="about-title">
-          <div className="section-heading"><p className="eyebrow">01 / ABOUT ME</p><h2 id="about-title">안녕하세요,<br />이런 사람입니다<span>.</span></h2></div>
+          <div className="section-heading"><p className="eyebrow">01 / ABOUT ME</p><h2 id="about-title">안녕하세요,<br />안선아입니다<span>.</span></h2></div>
           <div className="about-content">
-            <span className="example-label">자기소개를 채워 보세요</span>
-            <h3>나를 가장 잘 설명하는<br />한 문장은 무엇인가요?</h3>
-            <p>좋아하는 것, 요즘 배우는 것, 앞으로 해 보고 싶은 일을 소개해 주세요. 거창한 경험보다 나만의 관심사와 생각이 좋은 시작이 됩니다.</p>
-            <div className="interest-tags"><span># 나의 관심사</span><span># 배우는 중</span><span># 다음 도전</span></div>
+            <h3>호기심을 따라 새로운 것을 배우는 사람</h3>
+            <p>자기계발과 게임, 대화를 좋아하고 코딩과 데이터 개발, 운동을 배우고 싶어요.</p>
+            <div className="interest-tags"><span># 자기계발</span><span># 게임</span><span># 대화</span></div>
             <a className="text-link about-more" href="#/about">자기소개 보기 <span aria-hidden="true">→</span></a>
           </div>
         </section>
@@ -129,22 +128,55 @@ function App() {
           <a className="text-link list-back" href="#home"><span aria-hidden="true">←</span> 홈으로 돌아가기</a>
           <div className="about-page-heading">
             <p className="eyebrow">MY STORY / ABOUT ME</p>
-            <h1 id="about-page-title" tabIndex={-1}>자기소개<span>.</span></h1>
-            <p className="list-description">좋아하는 것과 배우는 것, 그리고 앞으로의 나에 대한 이야기.</p>
+            <h1 id="about-page-title" tabIndex={-1}>안녕하세요,<br />안선아입니다<span>.</span></h1>
+            <p className="about-page-intro">호기심을 따라 새로운 것을 배우는 사람.</p>
+            <p className="list-description">나의 관심사와 경험, 앞으로 이루고 싶은 목표를 소개합니다.</p>
           </div>
-          <div className="about-profile">
-            <div className="about-profile-art" aria-hidden="true"><span>✳</span><p>STILL LEARNING,<br />ALWAYS GROWING.</p><div>나만의 속도로,<br />나만의 방향으로.</div></div>
-            <div className="about-content">
-              <span className="example-label">나의 이야기로 채워 보세요</span>
-              <h2>안녕하세요,<br />이런 사람입니다<span>.</span></h2>
-              <p>나를 가장 잘 설명하는 한 문장으로 시작해 보세요. 좋아하는 것, 요즘 배우는 것, 앞으로 해 보고 싶은 일을 자신만의 이야기로 소개해 주세요.</p>
-              <dl className="about-details">
-                <div><dt>관심 있는 것</dt><dd>시간 가는 줄 모르고 빠져드는 주제나 취미를 적어 주세요.</dd></div>
-                <div><dt>요즘 배우는 것</dt><dd>새롭게 배우고 있거나 도전하고 있는 것을 소개해 주세요.</dd></div>
-                <div><dt>앞으로의 목표</dt><dd>만들어 보고 싶은 것, 이루고 싶은 작은 목표를 적어 주세요.</dd></div>
-              </dl>
-              <a className="button button-primary" href="#/portfolio">포트폴리오 보기 <span aria-hidden="true">↗</span></a>
-            </div>
+          <div className="profile-grid">
+            <section className="profile-card" aria-labelledby="profile-interests">
+              <p className="profile-card-label">01 / INTERESTS</p>
+              <h2 id="profile-interests">관심사와 취미</h2>
+              <ul className="profile-tags">
+                <li>자기계발</li>
+                <li>게임</li>
+                <li>대화</li>
+              </ul>
+            </section>
+            <section className="profile-card" aria-labelledby="profile-strengths">
+              <p className="profile-card-label">02 / STRENGTHS</p>
+              <h2 id="profile-strengths">내가 잘하는 것</h2>
+              <ul className="profile-list">
+                <li>상식이 많아요</li>
+                <li>발표를 잘해요</li>
+                <li>야망이 있어요</li>
+              </ul>
+            </section>
+            <section className="profile-card" aria-labelledby="profile-learning">
+              <p className="profile-card-label">03 / LEARNING</p>
+              <h2 id="profile-learning">배우고 싶은 것</h2>
+              <ul className="profile-tags">
+                <li>코딩</li>
+                <li>데이터 개발</li>
+                <li>운동</li>
+              </ul>
+            </section>
+            <section className="profile-card" aria-labelledby="profile-activities">
+              <p className="profile-card-label">04 / ACTIVITIES</p>
+              <h2 id="profile-activities">해본 활동</h2>
+              <ul className="profile-list">
+                <li>코딩 동아리 활동</li>
+                <li>개발 대회 수상</li>
+              </ul>
+              <p className="profile-note">사진이나 작품은 나중에 추가할 수 있어요.</p>
+            </section>
+            <section className="profile-card profile-card--wide" aria-labelledby="profile-goals">
+              <p className="profile-card-label">05 / GOALS</p>
+              <h2 id="profile-goals">앞으로의 목표</h2>
+              <ul className="profile-goals">
+                <li><span>01</span>팀 프로젝트에서 대상 수상하기</li>
+                <li><span>02</span>내가 만든 앱 출시하기</li>
+              </ul>
+            </section>
           </div>
         </section>}
         {isPortfolioPage && <section className="portfolio-section portfolio-page" aria-labelledby="portfolio-title">
